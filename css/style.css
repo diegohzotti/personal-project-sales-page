@@ -1,0 +1,350 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+    font-family: 'Opens Sans', sans-serif;
+    color: white;
+}
+
+.header {
+    grid-area: header;
+    background: url(../images/background.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.header .header-container {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8177777777777777) 51%, rgba(54, 54, 54, 0.807) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header .logo {
+    width: 30%;
+}
+
+.header .text {
+    color: white;
+    line-height: 4rem;
+}
+
+.header .text h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+}
+
+.header .text p {
+    font-size: 1.5rem;
+}
+
+.header label {
+    color: white;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+.header .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .formulario .camp {
+    margin-bottom: 1rem;
+    border-radius: 20px;
+    width: 400px;
+    height: 30px;
+    padding: 1rem;
+}
+
+.header .formulario .button {
+    width: 95%;
+    padding: 1.3rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header .formulario .button:hover {
+    background-color: #01f4b7;
+    cursor: pointer;
+}
+
+.main {
+    grid-area: main;
+}
+
+.nav .icon-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.nav .icon-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem;
+}
+
+.nav .icon-list li p {
+    margin-top: 2rem;
+    width: 70%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.nav .icon-list li i {
+    font-size: 6rem;
+}
+
+.target-audience {
+    padding: 20rem 0rem;
+    background: rgb(132, 22, 242);
+    background: linear-gradient(0deg, rgba(132, 22, 242, 1) 0%, rgba(132, 22, 242, 0.8295693277310925) 48%, rgba(128, 12, 245, 0.45702030812324934) 100%);
+}
+
+.target-audience .info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.target-audience .title-target {
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.target-audience .info .numbers {
+    margin: 1rem;
+    text-align: start;
+    flex-grow: 1;
+}
+
+.target-audience .info .numbers p:first-child {
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.target-audience .info .numbers p:last-child {
+    border: 2px solid black;
+    border-radius: 2rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.studies {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(132, 22, 242);
+    background: linear-gradient(0deg, rgba(132, 22, 242, 1) 0%, rgba(132, 22, 242, 0.8295693277310925) 48%, rgba(128, 12, 245, 0.45702030812324934) 100%);
+}
+
+.studies .title-studies {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.studies .btn {
+    padding: 1.5rem 10rem;
+    border-radius: 1rem;
+    width: 30%;
+    margin: 6rem 0;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.studies .btn:hover {
+    background-color: var(--cor-padrão#01f4b7, aquamarine);
+    cursor: pointer;
+}
+
+.teacher {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.teacher .image-teacher {
+    display: flex;
+    align-items: center;
+}
+
+.background-teacher {
+    background: rgb(132, 22, 242);
+    background: linear-gradient(0deg, rgba(132, 22, 242, 1) 0%, rgba(132, 22, 242, 0.8295693277310925) 48%, rgba(128, 12, 245, 0.45702030812324934) 100%);
+}
+
+.teacher .info-teacher {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    margin-right: 2rem;
+}
+
+.teacher .info-teacher h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.teacher .info-teacher p {
+    font-size: 1.5rem;
+    width: 80%;
+    margin: 1rem 0;
+    font-weight: 300;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem 0;
+    background: url(../images/background.jpg) center center no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.footer h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.footer .social-media {
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+}
+
+.footer .social-media li {
+    padding: 2rem;
+}
+
+.footer .social-media li a i {
+    transition: 0.2s ease-in-out;
+}
+
+.footer .social-media li a:hover i {
+    color: #01f4b7;
+    scale: 110%;
+}
+
+@media(max-width:850px) {
+    .header .text {
+        width: 50%;
+    }
+
+    .nav .icon-list {
+        grid-template-columns: 1fr;
+    }
+
+    .header .text {
+        line-height: 2rem;
+    }
+
+    .header .text h1 {
+        line-height: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    .header .logo {
+        width: 40%;
+    }
+
+    .target-audience .info {
+        flex-direction: column;
+    }
+
+    .teacher {
+        padding: 4rem;
+    }
+
+}
+
+@media(max-width:820px) {
+    .teacher {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher .info-teacher {
+        text-align: center;
+        align-items: center;
+    }
+
+    .teacher .image-teacher {
+        justify-content: center;
+    }
+
+    .teacher .image-teacher img {
+        width: 50%;
+    }
+}
+
+@media(max-width:576px) {
+    .target-audience {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .target-audience .title-target {
+        text-align: center;
+    }
+}
+
+@media(max-width:450px) {
+    .header-container .formulario .camp {
+        width: 150%;
+    }
+
+    .studies {
+        padding: 1rem;
+    }
+
+    .studies .title-studies {
+        text-align: center;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .header .logo{
+        width: 70%;
+    }
+}

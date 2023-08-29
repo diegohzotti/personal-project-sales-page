@@ -1,0 +1,7 @@
+Fontes:
+
+Números: Prompt, 800
+
+Titulos: Oswald, 700
+
+Textos: Opens Sans, 300
