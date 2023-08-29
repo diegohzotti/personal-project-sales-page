@@ -75,7 +75,7 @@ body {
 }
 
 .header .formulario .button:hover {
-    background-color: #01f4b7;
+    background-color: var(--cor-padrão, aquamarine);
     cursor: pointer;
 }
 
@@ -185,7 +185,7 @@ body {
 }
 
 .studies .btn:hover {
-    background-color: var(--cor-padrão#01f4b7, aquamarine);
+    background-color: var(--cor-padrão, aquamarine);
     cursor: pointer;
 }
 
